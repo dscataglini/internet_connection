@@ -1,2 +1,21 @@
+## MAC OS
 .DS_Store
-doc/
+
+## TEXTMATE
+*.tmproj
+tmtags
+
+## EMACS
+*~
+\#*
+.\#*
+
+## VIM
+*.sw[nop]
+
+## RUBYMINE
+.idea/
+
+## PROJECT::SPECIFIC
+*.gem
+doc/*
