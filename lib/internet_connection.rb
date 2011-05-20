@@ -1,4 +1,4 @@
-# :main: README.rdoc
+# :main: README.markdown
 
 require 'resolv'
 require 'resolv-replace'
