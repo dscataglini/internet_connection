@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'internet_connection'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.date = '2011-05-20'
   s.summary = 'Checks if the internet connection is on or off.  Useful for choosing CDN vs local assets, for example.'
   s.authors = ['Diego Scataglini @_sc']
