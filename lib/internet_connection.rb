@@ -16,7 +16,7 @@ module InternetConnection
   # if it can you've got an internet connection
   def on?
     begin
-      !!Resolv.getaddress('www.google.com')
+      !!Resolv.getaddress('www.example.com')
     rescue Errno::EHOSTUNREACH
       return false
     end
