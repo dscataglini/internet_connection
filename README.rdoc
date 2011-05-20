@@ -1,0 +1,11 @@
+# Checks if it can connection to the internet
+# by trying to resolve a hostname to an ip
+# It should be faster than pinging a server
+# I couldn't think of a faster way than dsn resolve
+# 
+# Example:
+#   >> InternetConnection.on?  => true
+#   >> InternetConnection.off? => false
+# 
+# If using ruby 1.9 with eventmachine please install
+# em-resolv-replace gem for evented thread save resolvs
