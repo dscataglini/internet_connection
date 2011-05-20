@@ -1,5 +1,3 @@
-# :main: README.markdown
-
 require 'resolv'
 require 'resolv-replace'
 if RUBY_VERSION =~ /1.9.*/
@@ -12,11 +10,11 @@ if RUBY_VERSION =~ /1.9.*/
 end
 
 module InternetConnection
-  # InternetConnection#on? will try to resolve google.com dns.
+  # InternetConnection#on? will try to resolve a host with dns.
   # if it can you've got an internet connection
-  def on?
+  def on?(host = 'www.example.com')
     begin
-      !!Resolv.getaddress('www.google.com')
+      !!Resolv.getaddress(host)
     rescue Errno::EHOSTUNREACH
       return false
     end
